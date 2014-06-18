@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Backgammon</title>
+		<link rel="stylesheet" href="bg.css">
+		<link rel="stylesheet" href="reset.css">
+		
+	</head>
+	<body>
+		<div id="board">
+			<div class="alley abs left">
+				
+			</div>
+			<div id="left-half" class="half">
+			
+			<!-- Board Layout -->
+				<div id="x1" class="abs top p1 pos">
+					<div class="arrow down-black abs top"></div>
+				</div>
+				<div id="x2" class="abs top p2 pos">
+					<div class="arrow down-white abs top"></div>
+				</div>
+				<div id="x3" class="abs top p3 pos">
+					<div class="arrow down-black abs top"></div>
+				</div>
+				<div id="x4" class="abs top p4 pos">
+					<div class="arrow down-white abs top"></div>
+				</div>
+				<div id="x5" class="abs top p5 pos">
+					<div class="arrow down-black abs top"></div>
+				</div>
+				<div id="x6" class="abs top p6 pos">
+					<div class="arrow down-white abs top"></div>
+				</div>
+				
+				<div id="x24" class="abs bot p1 pos">
+					<div class="arrow up-white abs bot"></div>
+					<div class="circle abs c1-bot purple"></div>
+					<div class="circle abs c2-bot purple"></div>
+				</div>
+				<div id="x23" class="abs bot p2 pos">
+					<div class="arrow up-black abs bot"></div>
+				</div>
+				<div id="x22" class="abs bot p3 pos">
+					<div class="arrow up-white abs bot"></div>
+				</div>
+				<div id="x21" class="abs bot p4 pos">
+					<div class="arrow up-black abs bot"></div>
+				</div>
+				<div id="x20" class="abs bot p5 pos">
+					<div class="arrow up-white abs bot"></div>
+				</div>
+				<div id="x19" class="abs bot p6 pos">
+					<div class="arrow up-black abs bot"></div>
+				</div>
+				
+			<!-- Pieces -->
+				
+				<div class="circle abs p6 c1-bot botrow green"></div>
+				<div class="circle abs p6 c2-bot botrow green"></div>
+				<div class="circle abs p6 c3-bot botrow green"></div>
+				<div class="circle abs p6 c4-bot botrow green"></div>
+				<div class="circle abs p6 c5-bot botrow green"></div>
+				
+				<div class="circle abs p6 c1-top toprow purple"></div>
+				<div class="circle abs p6 c2-top toprow purple"></div>
+				<div class="circle abs p6 c3-top toprow purple"></div>
+				<div class="circle abs p6 c4-top toprow purple"></div>
+				<div class="circle abs p6 c5-top toprow purple"></div>
+				
+				<div class="circle abs p1 c1-top toprow green"></div>
+				<div class="circle abs p1 c2-top toprow green"></div>
+				
+				<!--
+<div class="circle abs p1 c1-bot botrow purple"></div>
+				<div class="circle abs p1 c2-bot botrow purple"></div>
+-->
+
+			</div>
+			
+			<div id="right-half" class="half">
+			
+			<!-- Board Layout -->
+				<div id="x7" class="abs top p1 pos">
+					<div class="arrow down-black abs top"></div>
+				</div>
+				<div id="x8" class="abs top p2 pos">
+					<div class="arrow down-white abs top"></div>
+				</div>
+				<div id="x9" class="abs top p3 pos">
+					<div class="arrow down-black abs top"></div>
+				</div>
+				<div id="x10" class="abs top p4 pos">
+					<div class="arrow down-white abs top"></div>
+				</div>
+				<div id="x11" class="abs top p5 pos">
+					<div class="arrow down-black abs top"></div>
+				</div>
+				<div id="x12" class="abs top p6 pos">
+					<div class="arrow down-white abs top"></div>
+				</div>
+				
+				<div id="x18" class="abs bot p1 pos">
+					<div class="arrow up-white abs bot"></div>
+				</div>
+				<div id="x17" class="abs bot p2 pos">
+					<div class="arrow up-black abs bot"></div>
+				</div>
+				<div id="x16" class="abs bot p3 pos">
+					<div class="arrow up-white abs bot"></div>
+				</div>
+				<div id="x15" class="abs bot p4 pos">
+					<div class="arrow up-black abs bot"></div>
+				</div>
+				<div id="x14" class="abs bot p5 pos">
+					<div class="arrow up-white abs bot"></div>
+				</div>
+				<div id="x13" class="abs bot p6 pos">
+					<div class="arrow up-black abs bot"></div>
+				</div>
+				
+			<!-- Pieces -->
+				
+				<div class="circle abs p2 c1-top toprow purple"></div>
+				<div class="circle abs p2 c2-top toprow purple"></div>
+				<div class="circle abs p2 c3-top toprow purple"></div>
+				
+				<div class="circle abs p2 c1-bot botrow green"></div>
+				<div class="circle abs p2 c2-bot botrow green"></div>
+				<div class="circle abs p2 c3-bot botrow green"></div>
+				
+				<div class="circle abs p6 c1-bot botrow purple"></div>
+				<div class="circle abs p6 c2-bot botrow purple"></div>
+				<div class="circle abs p6 c3-bot botrow purple"></div>
+				<div class="circle abs p6 c4-bot botrow purple"></div>
+				<div class="circle abs p6 c5-bot botrow purple"></div>
+				
+				<div class="circle abs p6 c1-top toprow green"></div>
+				<div class="circle abs p6 c2-top toprow green"></div>
+				<div class="circle abs p6 c3-top toprow green"></div>
+				<div class="circle abs p6 c4-top toprow green"></div>
+				<div class="circle abs p6 c5-top toprow green"></div>
+			</div>
+			<div class="alley abs right">
+				<div id="rollbutton" class="abs">
+					<p>Roll</p>
+				</div>
+				<div id="dice1" class="abs dice">
+					<p id="d1p">0</p>
+				</div>
+				<div id="dice2" class="abs dice">
+					<p id="d2p">0</p>
+				</div>
+				<div id="turndiv" class="abs">
+				</div>
+				<div id="donebutton" class="abs">
+					<p>Done</p>
+				</div>
+			</div>
+		</div>
+		
+		<script src="jquery-2.1.1.min.js"></script>
+		<script src="bg.js"></script>
+				
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

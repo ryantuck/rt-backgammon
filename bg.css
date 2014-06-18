@@ -1,0 +1,150 @@
+/* backgammon css */
+
+#board
+{
+	width: 700px;
+	height: 450px;
+	background: yellow;
+	position: relative;
+}
+
+.body
+{
+	margin:0;
+}
+
+.alley
+{
+	width: 80px;
+	background: gray;
+	height: 100%;
+}
+
+.half
+{
+	width: 240px;
+	background: gray;
+	height: 100%;
+	position: absolute;
+}
+
+.abs {position: absolute;}
+
+.top { top:0; }
+.bot { bottom:0; }
+
+.p1 { left:0; }
+.p2 { left:40px; }
+.p3 { left:80px; }
+.p4 { left:120px; }
+.p5 { left:160px; }
+.p6 { left:200px; }
+
+.left {left:0;}
+.right {right:0;}
+
+#left-half {left:100px;}
+#right-half {right:100px;}
+
+
+
+.arrow
+{
+	width: 	0;
+	height: 0;
+	border-left: 	20px transparent solid;
+	border-right: 	20px transparent solid;
+}
+
+.up-black 	{border-bottom: 200px solid black;}
+.up-white 	{border-bottom: 200px solid white;}
+.down-black {border-top: 	200px solid black;}
+.down-white {border-top: 	200px solid white;}
+
+
+.circle
+{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.black {background: black;}
+.white {background: white;}
+.green {background: green;}
+.purple {background: purple;}
+
+.c1-bot {bottom: 0;}
+.c2-bot {bottom: 40px;}
+.c3-bot {bottom: 80px;}
+.c4-bot {bottom: 120px;}
+.c5-bot {bottom: 160px;}
+
+.c1-top {top:0;}
+.c2-top {top:40px;}
+.c3-top {top:80px;}
+.c4-top {top:120px;}
+.c5-top {top:160px;}
+
+.selected {border:2px solid yellow;}
+
+.possible {border: 2px solid cyan;}
+
+.toprow {}
+.botrow {}
+.pos{}
+
+
+
+
+
+.dice
+{
+	border: 1px black solid;
+	width: 50px;
+	height: 50px;	
+}
+
+#dice1
+{
+	left:10px;
+	top: 140px;
+}
+
+#dice2
+{
+	left: 10px;
+	top:200px;
+}
+
+#rollbutton
+{
+	border: 1px black solid;
+	width: 	50px;
+	height:	30px;
+	left:	10px;
+	top:	100px;
+}
+
+#donebutton
+{
+	border: 1px black solid;
+	width: 50px;
+	height: 30px;
+	left: 10px;
+	top: 320px;
+}
+
+#turndiv
+{
+	width: 50px;
+	height: 50px;
+	background: green;
+	left: 10px;
+	top: 260px;
+	border: 1px black solid;
+}
+
+
+
+
